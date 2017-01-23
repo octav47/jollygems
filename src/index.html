@@ -401,7 +401,7 @@ Use search to find needed section.
 <![endif]-->
 
 <!-- Demo purpose only -->
-<script src="js/demo.min.js"></script>
+<!--<script src="js/demo.min.js"></script>-->
 
 <!-- MAIN APP JS FILE -->
 <script src="js/app.min.js"></script>
@@ -442,22 +442,35 @@ Use search to find needed section.
 
 </script>
 
-<!-- Your GOOGLE ANALYTICS CODE Below -->
+<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-    _gaq.push(['_trackPageview']);
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42291864 = new Ya.Metrika({
+                    id:42291864,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
 
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
 </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42291864" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 
