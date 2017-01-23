@@ -1,3 +1,39 @@
 .menu-on-top #main {
     margin-top: 0 !important;
 }
+
+#imgInfoBox span p em {
+    display: none;
+}
+
+#imgInfoBox span p:last-child {
+    display: none;
+}
+
+.superbox-imageinfo {
+    max-width: 800px;
+}
+
+@media only screen and (min-width: 320px) {
+    .superbox-list {
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 486px) {
+    .superbox-list {
+        width: 24%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .superbox-list {
+        width: 15.66666667%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .superbox-list {
+        width: 11.5%;
+    }
+}
